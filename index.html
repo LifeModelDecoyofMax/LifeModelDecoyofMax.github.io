@@ -1,0 +1,55 @@
+<html>
+<head>
+	<meta name="viewport" content="width=300, initial-scale=1" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<style type="text/css">
+	
+        body
+        {
+            overflow-x: hidden;
+overflow-y: scroll;
+        }
+    
+/* basic styles for black background and crosshair cursor */
+body {
+	background: #000;
+	margin: 0;
+        
+}
+
+canvas {
+	cursor: crosshair;
+	display: block;
+}
+</style>
+<body>
+	<div style="visibility:visible">
+		<audio loop>
+			<source src="./config/assets/fireworks.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+	<!-- setup our canvas element -->
+	<canvas id="canvas">Canvas is not supported in your browser.</canvas>
+	<script>
+		setTimeout("location.href = './config/Birthday.html';",17000);
+		// 等待17000毫秒
+	</script>
+	<script type="text/javascript" src="./config/javascript/fireworks.js"></script>
+	<script>
+		var firstTime = true;
+		var body = document.querySelector("body");
+		body.addEventListener("click",function(){
+			if(firstTime){
+				firstTime = false;
+				var music = document.querySelector("audio");
+      			music.play();
+			}
+		})
+	</script>
+	<script>alert("Click somewhere :D   relocate in 20 sec")</script>
+	<!-- 弹窗 -->
+</body>
+</html>
