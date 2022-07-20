@@ -6,9 +6,10 @@
 }
 
 body {
-  background: #E5E5E5; /*原始外面背景（在紫色的下面）*/
-  background-image: url("bg.jpg");
-}
+/*  background: #E5E5E5; /*原始外面背景（在紫色的下面）*/
+    background: #2c315d; /*原始外面背景（在紫色的下面）*/
+/*  background-image: url("bg.jpg");
+*/}
 
 #card-front {
   color: #FFDFDF;
